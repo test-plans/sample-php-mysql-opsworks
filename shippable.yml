@@ -2,7 +2,14 @@ language: php
 
 php: 
   - 5.4
+  - 5.5
+  - 5.6
+  - "7.0"
+build_image: drydock/u12phpall:tip
 
+services:
+  - mysql
+  
 env:
   global:
     - AWS_DEFAULT_REGION=us-east-1 AWS_STACK=73f89cfc-3f99-4227-a339-73a0ba30acbb AWS_APP_ID=1604ff83-aeb4-4677-b436-a9daac1ceb98
